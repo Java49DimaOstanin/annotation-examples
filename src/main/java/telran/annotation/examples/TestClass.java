@@ -1,5 +1,6 @@
 package telran.annotation.examples;
 
+import telran.test.annotation.BeforeEach;
 import telran.test.annotation.Test;
 
 public class TestClass {
@@ -17,4 +18,8 @@ private void f1(int b) {
 	void test() {
 	f1();
 	}
+@BeforeEach
+void setup() {
+	System.out.println("Set Up ");
+}
 }
